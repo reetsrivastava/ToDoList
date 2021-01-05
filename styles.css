@@ -1,0 +1,141 @@
+:root {
+    --back-color:#04A1BF;
+    --primary-color:#025F70;
+    /* --secondary-color:#04A1BF; */
+    --tertiary-color:#51DF70;
+    --optional-color:#FFCD5D;
+
+}
+
+::selection {
+    color: yellow;
+    background-color: var(--primary-color);
+}
+
+
+
+body {
+    background: var(--back-color);
+	text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+
+p {
+    font-weight: 600;
+}
+
+#list {
+    margin: 0.5rem 0.3rem;
+}
+
+.heading {
+    color: var(--tertiary-color);
+    font-size: 50px;
+}
+
+.ad-content {
+    font-size: 20px;
+    color: #ffffff;
+
+}
+
+.complete-content {
+    color: var(--optional-color);
+    font-size: 20px;
+}
+
+.remove-content {
+    font-size: 15px;
+    color: var(--primary-color);
+}
+
+input {
+    padding: 1rem;
+    width: 70%;
+    border: 2px solid var(--primary-color);
+    /* border: none; */
+    border-radius: 10px;
+    font-size: 15px;
+    
+}
+
+#add-icon {
+    padding: 0.5rem 1rem;
+    font-size: 20px;
+    background-color: var(--primary-color);
+    color: var(--back-color);
+    border-radius: 10px;
+}
+
+#add-icon:hover {
+    background-color: #02798F;
+	color: #FFCD5D;
+}
+
+ul {
+    text-align: left;
+    margin-top: 20px;
+    padding-inline-start: 0;
+}
+
+li {
+    list-style: none;
+	padding: 10px 20px;
+	color: #ffffff;
+	text-transform: capitalize;
+	font-weight: 600;
+	border: 2px solid #025f70;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	background: #4EB9CD;
+	transition: all 0.75s ease;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+    -o-transition: all 0.5 ease;
+    width: 70%;
+    margin: 0 auto 10px;
+}
+
+li:hover {
+    background: #76CFE0;
+}
+
+li > button {
+    font-weight: normal;
+	background: none;
+	border: none;
+	float: right;
+	color: #025f70;
+	font-weight: 800;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+
+@media(max-width:500px) {
+    ul {
+        text-align: center;
+    }
+    
+
+    li > button {
+        float: none;
+        display: block;
+        border: 2px solid var(--tertiary-color);
+        margin: 0.3rem auto;
+    }
+    #add-icon {
+        width: 60%;
+        margin: 1rem auto;
+    }
+}
+
+
+
+
+
+
