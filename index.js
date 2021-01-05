@@ -3,6 +3,11 @@ var input = document.getElementById('takeInput');
 var addBtn = document.getElementById('add-icon');
 
 function addItem() {
+    if(input.value == "") {
+        alert("Please enter input to add.");
+    } else {
+
+    
     var node = document.createElement('li');
     var textNode = document.createTextNode(input.value);
     node.appendChild(textNode);
@@ -19,7 +24,7 @@ function addItem() {
     del.onclick = function() {
         node.remove();
     }
-  
+    }
 }
 
 addBtn.onclick = function() {
